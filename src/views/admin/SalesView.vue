@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        Desde productos
+        <h1>Resumen de ventas</h1>
     </div>
 </template>
 
