@@ -5,11 +5,12 @@
 <template>
     <div>
         <Link
-            to="new-product"
+            to="products"
         >
-            Nuevo Producto
+            Volver
         </Link>
-        <h1 class="text-4xl font-black my-10">Productos</h1>
+
+        <h1 class="text-4xl font-black my-10">Nuevo Producto</h1>
     </div>
 </template>
 
