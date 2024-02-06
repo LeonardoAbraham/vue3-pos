@@ -1,5 +1,9 @@
 <script setup>
     import Link from '@/components/Link.vue';
+    import useImage from '../../composables/useImage'
+
+    const { onFileChange } = useImage()
+
 </script>
 
 <template>
@@ -34,6 +38,7 @@
                         validation="required"
                         :validation-messages="{required:'La imagen del producto es obligatoria'}"
                         accept=".jpg"
+                        @change="onFileChange"
                     />
 
                     <FormKit 
