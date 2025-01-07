@@ -2,7 +2,7 @@
     import { reactive } from 'vue'
     import Link from '@/components/Link.vue';
     import useImage from '../../composables/useImage';
-    import { useProductsStore } from '../../stores/products';
+    import { useProductsStore,  } from '../../stores/products';
 
     const { url, onFileChange, isImageUploaded } = useImage()
     const products = useProductsStore();
@@ -76,7 +76,7 @@
                         name="category"
                         validation="required"
                         :validation-messages="{required:'La categoría es obligatoria'}"
-                        :options="[1,2,3]"
+                        :options="products.categoryOptions"
                         v-model.number="formData.category"
                     />
 
