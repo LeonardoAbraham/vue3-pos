@@ -38,6 +38,14 @@
         Object.assign((formData), product)
     })
 
+    const submitHandler = async data => {
+        try {
+            await products.updateProduct(docRef, data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 </script>
 
 <template>
